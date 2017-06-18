@@ -4,7 +4,7 @@
 body {
     color: #76B6E0;
     background-color: #0C030B;
-         font-size: 20px;
+    font-size: 20px;
 
 }
 
@@ -17,7 +17,7 @@ body {
 
 
 
-.navbar-default .navbar-brand {
+.menu, .nav, .navbar-default .navbar-brand {
     background-color: #1D323F;
     color: #789209;
     &:hover,
@@ -29,20 +29,48 @@ body {
 
 
 
-.navbar-default .navbar-nav>li>a{
-    
+.menu .nav>li>a, .navbar-default .navbar-nav>li>a{
 
-  
-        color:  #8FAD0B;
-        background-color:  #1D323F;
- 
-  }
-  
-  
-  .navbar-default {
-  
-        border-color:  #1D323F;
-        background-color:  #1D323F;
- 
-  }
-  
+    color:  #8FAD0B;
+    background-color:  #1D323F;
+    &:hover,
+        &:focus {
+        color: #B4DB0E;
+        /*      background-color: @navbar-default-brand-hover-bg;*/
+    }
+}
+
+
+.navbar-default {
+
+    border-color:  #1D323F;
+    background-color:  #1D323F;
+
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color: #1D323F;
+    color: #B4DB0E;
+}
+
+ul.menu li a:hover,
+ul.menu li:hover a,
+ul.menu li.hover a,
+ul.menu li.active-trail a {
+  /*background-position: right -29px;*/
+  color: #B4DB0E;
+  background-color: #1D323F;
+}
+
+ul.menu li a{
+    color: #8FAD0B;
+}
+
+.name .navbar-brand:hover,
+.name .navbar-brand:hover a,
+.name .navbar-brand a,
+.name .navbar-brandactive-trail a {
+  /*background-position: right -29px;*/
+  color: #5FE05E;
+  background-color: #1D323F;
+}
